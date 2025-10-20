@@ -538,6 +538,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 20rem;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -618,9 +625,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 3.25rem;
 }
 
 .text-xl {
@@ -655,12 +662,17 @@ h1 {
   font-family: Tangerine, cursive;
   font-size: 3.75rem;
   line-height: 1;
+  font-weight: 700;
 }
 
 .button {
   box-sizing: content-box;
   display: flex;
   height: 28px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   align-items: center;
   border-radius: 9999px;
   border-width: 1px;
