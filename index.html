@@ -1,15 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Sample</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="styles.49a5a3129ceb642637b1.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/a09fdea489.js" crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <title>Anabella XV</title>
+</head>
+
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.d5167d408a8ecaf7720d.js"></script></body>
+  <section id="hero" class="bg-black bg-opacity-5 pb-10">
+    <img src="images/ana-logo.png" alt="" class="w-full lg:max-w-xl mx-auto" />
+  </section>
+  <section id="play" class="flex items-center flex-col with-separator">
+    <p class="max-w-xxs font-sans mx-auto text-center mt-8 mb-8">
+      Musicalizá la invitación presionando play
+    </p>
+    <div>
+      <button id="play-button"
+        class="mx-auto text-lg border border-black rounded-full px-4 py-2 active:bg-black active:text-white"><i
+          class="fa-solid fa-play mr-2"></i>Play</button>
+      <button id="pause-button"
+        class="mx-auto text-lg border border-black rounded-full px-4 py-2 active:bg-black active:text-white hidden"><i
+          class="fa-solid fa-pause mr-2"></i>Pause</button>
+    </div>
+    <audio id="audio" src="song.mp3"></audio>
+  </section>
+  <section id="countdown" class="with-separator">
+    <h1 class="">Comienza la cuenta regresiva para mi gran
+      noche
+    </h1>
+    <div class="flex justify-center mt-8 mb-8">
+      <div class="mx-4 text-center">
+        <h2 id="days" class="text-3xl">120</h2>
+        <p class="text-sm">Días</p>
+      </div>
+      <div class="mx-4 text-center">
+        <h2 id="hours" class="text-3xl">05</h2>
+        <p class="text-sm">Horas</p>
+      </div>
+      <div class="mx-4 text-center">
+        <h2 id="minutes" class="text-3xl">30</h2>
+        <p class="text-sm">Minutos</p>
+      </div>
+      <div class="mx-4 text-center">
+        <h2 id="seconds" class="text-3xl">10</h2>
+        <p class="text-sm">Segundos</p>
+      </div>
+  </section>
+  <section id="date" class="with-separator">
+    <h1 class="max-w-xxs">Sábado 29 de Noviembre 21:30hs.</h1>
+    <div class="mt-8">
+      <img src="images/foto-portada.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+    </div>
+  </section>
+  <section id="carrusel" class="mb-10">
+    <p class="max-w-xxs text-center font-tangerine mx-auto mt-10 text-4xl">
+      Hay momentos
+      inolvidables que
+      se atesoran en el
+      corazón para siempre.
+      Por esa razón
+      quiero que compartas
+      conmigo esta noche
+      tan especial.
+    </p>
+  </section>
+  <section class="splide" aria-label="Fotos de Ana">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img id="carrusel-image" src="images/foto1.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+        </li>
+        <li class="splide__slide">
+          <img id="carrusel-image" src="images/foto2.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+        </li>
+        <li class="splide__slide">
+          <img id="carrusel-image" src="images/foto3.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+        </li>
+        <li class="splide__slide">
+          <img id="carrusel-image" src="images/foto4.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+        </li>
+        <li class="splide__slide">
+          <img id="carrusel-image" src="images/foto5.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+        </li>
+        <li class="splide__slide">
+          <img id="carrusel-image" src="images/foto6.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class=" with-separator"></section>
+  <section id="location" class="flex items-center flex-col with-separator">
+    <!-- <h1><i class="fa-solid fa-cake"></i></h1> -->
+    <h1><i class="fa-solid fa-map-location-dot"></i></h1>
+    <p class="text-center mx-auto mt-10 -mb-6">Celebramos en:</p>
+    <h1 class="max-w-xxs">Espacio 1875 Eventos</h1>
+    <div class="mt-6">
+      <a href="https://maps.app.goo.gl/GK5MUzyJLVqd2Yzu8" target="_blank" class="button"><i
+          class="fa-solid fa-location-dot mr-2"></i>Ver mapa</a>
+    </div>
+  </section>
+  <section id="confirm" class="flex items-center flex-col with-separator">
+    <h1 class="max-w-xxs">Confirmá tu asistencia</h1>
+    <!-- <p class="text-center mx-auto mt-4 max-w-xxs px-3">presionando el botón de wsp</p> -->
+    <div class="mt-6">
+      <a href="https://wa.me/541167480039?text=Hola%2C%20Confirmo%20mi%20asistencia%20al%20evento." target="_blank"
+        class="button"><i class="fa-brands fa-whatsapp mr-2"></i>Confirmar</a>
+    </div>
+
+  </section>
+  <section id="gift" class="flex items-center flex-col with-separator">
+    <h1 class="max-w-xs">
+      Tu Presencia es mi mejor regalo...<br>
+      Pero si querés
+      hacerme un<br>
+      obsequio...</h1>
+    <h1 class="mt-12"><i class="fa-solid fa-gift"></i></h1>
+    <p class="text-center text-xl mx-auto mt-6 max-w-xxs px-3 mb-6">alias: sar.bella</p>
+    <div>
+      <button id="copy-alias" class="button"><i class="fa-solid fa-copy mr-2"></i>Copiar alias</button>
+    </div>
+
+  </section>
+  <section id="dresscode" class="flex items-center flex-col with-separator">
+    <div class="">
+      <img src="images/dresscode.png" class="w-full" />
+    </div>
+    <p class="text-center mx-auto mt-4 max-w-xxs px-3">Dress Code:</p>
+    <h1 class="max-w-xxs">
+      Elegante</h1>
+    <p class="text-center mx-auto mt-4 max-w-xxs px-3">Los colores Blanco
+      y Azul son exclusivos</p>
+
+  </section>
+  <section id="songs" class="flex items-center flex-col with-separator">
+    <h1 class="mt-12"><i class="fa-solid fa-music"></i></h1>
+    <h1 class="max-w-xxs">
+      ¿Qué canción no
+      puede faltar en
+      mi gran fiesta?</h1>
+    <p class="text-center mx-auto mt-4 max-w-xxs px-3">Sugerí tu canción
+      presionando en el
+      logo de youtube music</p>
+    <div class="mt-6">
+      <a href="#" class="button"><i class="fa-brands fa-whatsapp mr-2"></i>Sugerir</a>
+    </div>
+
+  </section>
+  <section id="share" class="flex items-center flex-col with-separator">
+    <h1 class="mt-12"><i class="fa-solid fa-camera"></i></h1>
+    <h1 class="max-w-xxs">
+      Compartí tu foto conmigo</h1>
+    <p class="text-center mx-auto mt-4 max-w-xxs px-3">presionando en la
+      fotos podrás
+      compartir conmigo</p>
+    <div class="mt-6">
+      <a target="_blank"
+        href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2F_x.ii_26%2F%3Futm_source%3Dig_web_button_share_sheet&sa=D&sntz=1&usg=AOvVaw1CyNTu_Kbo7axShHqcF5J-"
+        class="button"><i class="fa-brands fa-instagram mr-2"></i>Compartir</a>
+    </div>
+
+  </section>
+  <section id="closing">
+    <p class="max-w-xs text-center font-tangerine mx-auto mt-10 text-4xl mb-10">
+      Un millón de recuerdos<br>
+      me trajeron hasta aquí…<br>
+      y uno más se hará<br>
+      eterno si estas conmigo en<br>
+      esta noche tan especial.<br>
+      ¡¡Te espero!!
+    </p>
+  </section>
+  <section id="footer" class="bg-black bg-opacity-5 pb-10">
+    <img src="images/ana-logo.png" alt="" class="w-full lg:max-w-xl mx-auto" />
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+
 </html>
