@@ -35,7 +35,7 @@
         class="mx-auto text-lg border border-black rounded-full px-4 py-2 active:bg-black active:text-white hidden"><i
           class="fa-solid fa-pause mr-2 select-none"></i>Pause</button>
     </div>
-    <audio id="audio" src="song.mp3"></audio>
+    <audio id="audio" src="song.mp3" loop></audio>
   </section>
   <section id="countdown" class="with-separator">
     <h1 class="">Comienza la cuenta regresiva para mi gran
@@ -60,7 +60,7 @@
       </div>
   </section>
   <section id="date" class="with-separator">
-    <h1 class="max-w-xxs">Sábado 29 de Noviembre 21:30hs.</h1>
+    <h1 class="max-w-xxs">Sábado 29 de Noviembre 21:30 hs.</h1>
     <div class="mt-8">
       <img src="images/foto-portada.jpg" class="w-full lg:max-w-2xl mx-auto lg:rounded-xl" />
     </div>
@@ -116,8 +116,8 @@
     <h1 class="max-w-xxs">Confirmá tu asistencia</h1>
     <!-- <p class="text-center mx-auto mt-4 max-w-xxs px-3">presionando el botón de wsp</p> -->
     <div class="mt-6">
-      <a href="https://wa.me/541167480039?text=Hola%2C%20Confirmo%20mi%20asistencia%20al%20evento." target="_blank"
-        class="button"><i class="fa-brands fa-whatsapp mr-2"></i>Confirmar</a>
+      <a href="https://wa.me/541159511967?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20evento.%20NOMBRE%20APELLIDO"
+        target="_blank" class="button"><i class="fa-brands fa-whatsapp mr-2"></i>Confirmar</a>
     </div>
 
   </section>
@@ -152,10 +152,10 @@
       puede faltar en
       mi gran fiesta?</h1>
     <p class="text-center mx-auto mt-4 max-w-xxs px-3">Sugerí tu canción
-      presionando en el
-      logo de youtube music</p>
+      mandando el nombre o link</p>
     <div class="mt-6">
-      <a href="#" class="button"><i class="fa-brands fa-whatsapp mr-2"></i>Sugerir</a>
+      <a href="https://wa.me/541159511967?text=Hola%2C%20estos%20temas%20no%20pueden%20faltar%20en%20el%20evento."
+        target="_blank" class="button"><i class="fa-brands fa-whatsapp mr-2"></i>Sugerir</a>
     </div>
 
   </section>
@@ -167,9 +167,12 @@
       fotos podrás
       compartir conmigo</p>
     <div class="mt-6">
-      <a target="_blank"
-        href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2F_x.ii_26%2F%3Futm_source%3Dig_web_button_share_sheet&sa=D&sntz=1&usg=AOvVaw1CyNTu_Kbo7axShHqcF5J-"
-        class="button"><i class="fa-brands fa-instagram mr-2"></i>Compartir</a>
+      <button id="share-button" class="button"><i class="fa-brands fa-instagram mr-2"></i>Compartir</button>
+    </div>
+    <div id="share-message" class="mt-4 transition-all h-0 overflow-hidden duration-1000 ease-in-out box-border">
+      <p class="border border-black rounded-md px-2 py-1 opacity-80 flex items-center">
+        <i class="fa-solid fa-circle-info mr-2"></i>Estará disponible el día del evento
+      </p>
     </div>
 
   </section>

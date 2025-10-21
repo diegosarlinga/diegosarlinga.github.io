@@ -74,3 +74,15 @@ function copyAlias() {
 }
 
 document.getElementById("copy-alias").addEventListener("click", copyAlias);
+
+// share button not available script
+const shareButton = document.getElementById("share-button");
+const shareMessage = document.getElementById("share-message");
+
+shareButton.addEventListener("click", () => {
+  shareMessage.classList.remove("h-0");
+  shareMessage.classList.remove("h-auto");
+  setTimeout(() => {
+    shareMessage.classList.add("h-0");
+  }, 3000);
+});
