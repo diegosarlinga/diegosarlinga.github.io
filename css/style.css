@@ -661,6 +661,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .opacity-80 {
   opacity: 0.8;
 }
